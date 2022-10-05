@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" class="h-100">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+
+        <!-- Load Bootstrap CSS from JAR archive file -->
+        <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="#">
+    </head>    <body class="d-flex flex-column h-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-capitalize" href="#">Gallerify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="/about">About us</a>
+                    </li>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="/contact">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Content -->
+
+    <header>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/c1.jpg" class="d-block w-100" alt="img/c1.jpg">
+                    <div class="carousel-caption d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/c2.jpg" class="d-block w-100" alt="img/c2.jpg">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/c3.jpg" class="d-block w-100" alt="img/c3.jpg">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Us section starts-->
+    <section class="main-heading my-5">
+        <div class="text-center">
+            <h1 class="display-4">About Us</h1>
+            <hr class="w-25 mx-auto" />
+        </div>
+        <div id="about" class="container justfiy-content-center">
+            <div  class="row col-12 justify-content-around container-lg mt-5 p-5 ">
+                <div th:each="aboutUse : ${aboutUses}"  class="card col-3 " style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger"><i class="fas fa-code"></i></h5>
+                        <p class="card-text display-6" th:text="${aboutUse.getTitle()}"></p>
+                        <p class="text-muted" th:text="${aboutUse.getText()}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- About Us section ends-->
+
+        <footer class="bg-secondary text-center text-white p-4">
+            <p>&copy; Copyright 2022, YavuzOzbay</p>
+        </footer>
+
+    <script src="/js/bootstrap.min.js"></script>
+    </body>
+
+
+
+</html>

@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',
+  sans-serif;
+  font-family: 'Montserrat',
+  sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 91vh;
+}
+
+.about_img {
+  min-width: 100%;
+  max-height: 280px;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+  inline-size: 12px;
+}
+
+.channel_style {
+  background: #a6dcef;
+}
+
+footer p{
+  margin-bottom: 0;
+}
+
+/* Responsiveness */
+/* Media queries */
+
+@media(max-width: 992px) {
+  img {
+    width: 100%;
+    height: 91vh;
+  }
+}
+
+@media(max-width: 768px) {
+  img {
+    width: 100%;
+    height: 91vh;
+  }
+}
+
+@media(max-width: 375px) {
+  img {
+    width: 100%;
+    height: 60vh;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+/* No media query for `xs` since this is the default in Bootstrap
+
+/* Small devices (landscape phones, 576px and up) 
+@media (min-width: 576px) {
+  ...
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) {
+  ...
+}
+
+/* Large devices (desktops, 992px and up) 
+@media (min-width: 992px) {
+  ...
+}
+
+/* X-Large devices (large desktops, 1200px and up) 
+@media (min-width: 1200px) {
+  ...
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) 
+@media (min-width: 1400px) {
+  ...
+} */
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+
+
+</head>
+<body class="d-flex flex-column h-100">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand text-capitalize" href="#">Gallerify</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="/about">About us</a>
+        </li>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="/contact">contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Content -->
+
+
+<div id="portfolio" style="background-color:#505c7c;" class="row text-center mb-4 p-5 justify-content-center text-white ">
+  <div class="h2 text-light">contact me or </div>
+</div>
+<section class="main-heading .bg-light-bg-gradient my-5 pt-4">
+  <div class="text-center">
+    <h1 class="display-4">Contact Us</h1>
+    <hr class="w-25 mx-auto" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-8 col-10 col-md-6 mx-auto">
+
+<div>
+  <form th:object="${person}"  th:action="@{/createPerson}" method="post" class=" d-flex justify-content-center flex-column align-items-center">
+    <input type="text" th:field="*{firstName}" placeholder="Firstname" class="m-1" required>
+
+    <input type="text" th:field="*{lastName}" placeholder="Lastname"  class="m-1" required>
+    <button type="submit" class="btn btn-primary m-1">submit</button>
+  </form>
+  <p th:unless="${persons.size()} > 0 " class="text-center display-4">
+
+  </p>
+</div>
+<table  class="table" th:if="${persons.size() > 0}">
+  <thead>
+  <tr>
+    <th scope="col">First Name</th>
+    <th scope="col">Last Name</th>
+  </tr>
+  </thead>
+  <tr th:each="person : ${persons}">
+    <td th:text="${person.getFirstName()}">  </td>
+    <td th:text="${person.getLastName()}">  </td>
+  </tr>
+</table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-secondary text-center text-white p-4">
+  <p>&copy; Copyright 2022, YavuzOzbay</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand text-capitalize" href="#">Gallerify</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="/about">About us</a>
+        </li>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="/contact">contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Content -->
+
+<section class="main-heading my-5">
+  <div class="text-center">
+    <h1 class="display-4">About Us</h1>
+    <hr class="w-25 mx-auto" />
+  </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+        <figure>
+          <img class="img-fluid about_img" src="img/a2.jpg" alt="about images" srcset="">
+        </figure>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
+        <h1> Photography Redefined</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sed in dolorem quis eos omnis officiis
+          delectus
+          rem
+          aliquam, suscipit maxime provident numquam? Fuga, perspiciatis. Optio nisi delectus nam laboriosam!Sit
+          doloribus facilis
+          natus reiciendis ab, distinctio dicta maxime perspiciatis alias eveniet eligendi enim! Nemo aut quo deserunt
+          accusamus
+          voluptatibus magnam, explicabo ullam quaerat esse quis provident iusto nulla mollitia.
+        </p>
+        <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Click to Read More">Read more</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row">
+    <div id="navbar-example" style="position: relative;">
+
+
+      <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#fat">@fat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mdo">@mdo</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+               aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#one">one</a></li>
+              <li><a class="dropdown-item" href="#two">two</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0" style="height: 300px; overflow-y: scroll;">
+        <h4 id="fat">@fat</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, illo? Nam tenetur soluta impedit cupiditate
+          facere ab eligendi eius illo. A reiciendis saepe, laborum voluptatibus excepturi quod minus neque magnam.
+          Facere, quas ducimus aliquam aut esse molestias nemo vel possimus nulla est delectus cum nisi odit minima
+          placeat praesentium ex adipisci molestiae numquam ab consectetur fugit nam sapiente! Delectus, voluptas?
+          Dolores dolore unde officia velit assumenda delectus totam, aliquid nesciunt omnis architecto nam minima
+          possimus labore vero saepe nobis. Aliquam ad labore in, ex recusandae ullam suscipit animi corrupti nam?
+          Adipisci, reiciendis reprehenderit quam harum dignissimos ex quas tempore voluptate quaerat accusantium error
+          illum fuga aspernatur dolorum sequi provident sunt. Nostrum a corrupti, quas quaerat eos quae tempora
+          voluptatibus tempore!</p>
+        <h4 id="mdo">@mdo</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa totam inventore ipsum omnis voluptatibus
+          aperiam ut incidunt neque quis nostrum corrupti, necessitatibus eveniet laudantium eligendi illo perferendis,
+          quae blanditiis eius!
+          Dolorem accusantium minus neque dolorum dicta provident fugit, quod sit reiciendis atque ab, unde tempore
+          repellendus amet iure sapiente modi velit veritatis ipsum voluptatibus recusandae doloribus, inventore in
+          tempora. Voluptate.
+          Necessitatibus eum officiis suscipit dolore iure reprehenderit excepturi blanditiis aspernatur, nam, rem velit
+          inventore itaque adipisci? Impedit, deleniti. Reiciendis, optio ullam ipsum amet eos tempore nulla nesciunt
+          similique praesentium odit.
+          Repudiandae, ratione iure ipsum maiores porro possimus modi laborum obcaecati quod tenetur ad sapiente totam
+          id excepturi eius labore tempore, voluptatem ex. Perferendis ex dignissimos iste ducimus animi quidem
+          pariatur.</p>
+        <h4 id="one">one</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores asperiores dolores consequatur! Illo
+          consequatur quod, rerum iure dolorum molestiae modi, fugit ipsam impedit nesciunt aperiam eum provident
+          accusamus veniam! Iusto.
+          Aut nam ut excepturi ad voluptatum? Nisi minima, excepturi placeat recusandae hic illum dolor a possimus
+          deserunt! Excepturi repellendus ipsa error quia labore, laudantium ea, tenetur vitae, praesentium debitis
+          nobis.
+          Totam tempore consequuntur facilis, natus magnam sed, mollitia quia obcaecati itaque voluptate voluptatibus
+          dolores rem consequatur repudiandae earum, sint quisquam omnis reprehenderit cum. Odio quaerat consectetur
+          dolorem quis aspernatur est?
+          Ad culpa aliquam delectus impedit assumenda magni ipsam laboriosam quas! Deserunt dolorum necessitatibus,
+          mollitia aut neque accusantium dolore eius quisquam quo libero doloribus maxime, rem repudiandae voluptate
+          dolores itaque. Temporibus?</p>
+        <h4 id="two">two</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, illum obcaecati cum eius aut quaerat, nisi
+          provident similique corrupti vel quis quo fugiat beatae minus illo accusamus repudiandae suscipit? Deleniti.
+          Placeat nemo earum laborum magnam fugit ex eum aut blanditiis deserunt ullam omnis natus, similique suscipit,
+          ab nesciunt qui odio alias voluptatibus id rerum quisquam et tenetur est architecto. Quisquam.
+          Deleniti sequi aspernatur rem, minus odio voluptatem architecto iste, modi quo, perferendis labore quia in
+          earum perspiciatis nesciunt minima assumenda ratione! Nam possimus officia, nobis dicta voluptatibus fugit
+          minima praesentium.
+          Magnam maxime temporibus vel laudantium! Excepturi soluta eos officia voluptatibus exercitationem consequuntur
+          quos sit? Nostrum eum porro quibusdam illo sed voluptatibus quae. Nemo, modi ea sint architecto illo aperiam?
+          Vitae.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-secondary text-center text-white p-4">
+  <p>&copy; Copyright 2022, YavuzOzbay</p>
+</footer>
+</body>
+</html>
